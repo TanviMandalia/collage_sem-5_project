@@ -1,0 +1,77 @@
+/* Theme Overrides - Palette: #CCCCFF, #A3A3CC, #5C5C99, #292966 */
+:root{
+  --primary-50:  #CCCCFF;
+  --primary-200: #A3A3CC;
+  --primary-500: #5C5C99;
+  --primary-700: #292966;
+}
+
+/* Base text and backgrounds remain mostly neutral; adjust only accents */
+/* Utilities */
+.cl1 { color: var(--primary-500) !important; }
+.bg1 { background-color: var(--primary-500) !important; }
+.bg3 { background-color: var(--primary-700) !important; }
+
+/* Header and topbar */
+.top-bar { background-color: var(--primary-700) !important; }
+.right-top-bar a:hover { color: var(--primary-200) !important; }
+.container-menu-desktop .main-menu > li > a:hover { color: var(--primary-500) !important; }
+.container-menu-desktop .main-menu > li.active-menu > a { color: var(--primary-500) !important; }
+.container-menu-desktop .main-menu > li.active-menu > a::after { background: linear-gradient(90deg, var(--primary-50), var(--primary-500)) !important; }
+.container-menu-desktop .main-menu > li .sub-menu li a:hover { background:#f3f4f6; color: var(--primary-500) !important; }
+.wrap-icon-header .icon-header-item:hover { color: var(--primary-500) !important; }
+.wrap-icon-header .icon-header-noti[data-notify]:after { background: #ef4444 !important; }
+
+/* Buttons and CTAs using previous indigo/blue gradients */
+.about-cta .card { background: linear-gradient(180deg, var(--primary-500), var(--primary-700)) !important; }
+.register-page .btn-register,
+.login-page .btn-login { background: linear-gradient(180deg, var(--primary-500), var(--primary-700)) !important; box-shadow: 0 10px 25px rgba(92,92,153,0.28) !important; }
+.contact-cta .btn-success { background-color: #25D366 !important; border-color: #25D366 !important; }
+
+/* Breadcrumbs and chips */
+.products-breadcrumb .breadcrumb a { color: var(--primary-500) !important; }
+.products-breadcrumb .breadcrumb a:hover { color: var(--primary-700) !important; }
+.products-chips .chip { background: color-mix(in oklab, var(--primary-50) 45%, white) !important; border-color: color-mix(in oklab, var(--primary-50) 70%, white) !important; }
+.products-chips .chip:hover { background: color-mix(in oklab, var(--primary-50) 65%, white) !important; }
+
+/* Price filter slider (jQuery UI) */
+#slider-range { background: rgba(92,92,153,0.25) !important; }
+#slider-range .ui-slider-range { background: var(--primary-500) !important; }
+#slider-range .ui-slider-handle { background: var(--primary-500) !important; }
+#slider-range .ui-state-hover, #slider-range .ui-state-active { background: var(--primary-700) !important; }
+
+/* Product highlights */
+.product-card .price { color: var(--primary-500) !important; }
+.categories-card .list-group-item.active { background: color-mix(in oklab, var(--primary-50) 55%, white) !important; }
+.categories-card .list-group-item.active .cat-link .cat-name { color: var(--primary-500) !important; }
+
+/* Hero/overlays using previous blue tints -> align with palette */
+.about-hero .contact-hero__overlay,
+.about-hero-full .overlay { background: linear-gradient(180deg, rgba(41,41,102,0.65), rgba(41,41,102,0.35)) !important; }
+.testimonials-section .carousel-indicators li { background-color: rgba(92,92,153,.55) !important; }
+.testimonials-section .carousel-indicators .active { background-color: var(--primary-500) !important; }
+
+/* Links previously using #4f46e5 */
+.register-page .helper a { color: var(--primary-500) !important; }
+.register-page .input input:focus { border-color: var(--primary-500) !important; box-shadow: 0 0 0 4px rgba(92,92,153,0.12) !important; }
+.login-page .input input:focus { border-color: var(--primary-500) !important; box-shadow: 0 0 0 4px rgba(92,92,153,0.40) !important; }
+
+/* Back to top button */
+.btn-back-to-top { background-color: var(--primary-500) !important; }
+.btn-back-to-top:hover { background-color: var(--primary-500) !important; }
+
+/* General accents previously hardcoded to #6c7ae0, #4f46e5, #6366f1 */
+.about-stats i, .about-values i,
+.about-mission .feature i,
+.products-hero__title,
+.categories-card .list-group-item.active .cat-link .cat-name,
+.container-menu-desktop .main-menu > li > a:hover { color: var(--primary-500) !important; }
+
+/* Utility badge/pill tints */
+.products-hero__divider { background: linear-gradient(90deg, rgba(204,204,255,.25), rgba(163,163,204,.25), rgba(92,92,153,.25)) !important; }
+
+/* Ensure base body text contrast remains readable */
+body, html { color: #444444; }
+
+/* Top border: show at the very top of every page */
+body { border-top: 4px solid var(--primary-700) !important; }
